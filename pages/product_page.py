@@ -36,5 +36,10 @@ class ProductPage(BasePage):
         else:
             raise Exception("No element or some other error in /def cart_price_same_as_the_product/")
 
+    def should_not_be_success_message(self):
+        assert self.is_not_element_present(*ProductPageLocator.GOOD_ADDED_MESSAGE), \
+            "Success message is presented, but should not be"
 
-
+    def success_message_should_disappear(self):
+        assert self.is_disappeared(*ProductPageLocator.GOOD_ADDED_MESSAGE), \
+            "Success message is presented, but should disappear"
