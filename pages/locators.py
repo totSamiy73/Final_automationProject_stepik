@@ -23,3 +23,7 @@ class ProductPageLocator:
 class BasePageLocators:
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+    BUTTON_LOOK_BASKET = (By.CSS_SELECTOR, 'span > a')
+    PRODUCT_IN_BASKET = (By.CSS_SELECTOR, '.hidden-xs > div > h2')
+    MESSAGE_NO_PRODUCT = (By.CSS_SELECTOR, '#content_inner>p')
+
