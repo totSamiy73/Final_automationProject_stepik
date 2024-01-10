@@ -20,7 +20,7 @@ class ProductPage(BasePage):
                 self.is_element_present(*ProductPageLocator.GOOD_NAME_IN_MESSAGE)):
             assert (self.browser.find_element(*ProductPageLocator.NAME_PRODUCT).text ==
                     self.browser.find_element(*ProductPageLocator.GOOD_NAME_IN_MESSAGE).text), \
-                    "Product name does not match the product added"
+                "Product name does not match the product added"
         else:
             raise Exception("No element or some other error in /def name_product_in_message/")
 
@@ -32,7 +32,7 @@ class ProductPage(BasePage):
                 self.is_element_present(*ProductPageLocator.CART_PRICE)):
             assert (self.browser.find_element(*ProductPageLocator.NAME_PRODUCT).text ==
                     self.browser.find_element(*ProductPageLocator.GOOD_NAME_IN_MESSAGE).text), \
-                    "The price of the cart does not match the price of the product"
+                "The price of the cart does not match the price of the product"
         else:
             raise Exception("No element or some other error in /def cart_price_same_as_the_product/")
 

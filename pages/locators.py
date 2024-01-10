@@ -5,6 +5,7 @@ class MainPageLocators():
     pass
     # LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
 
+
 class LoginPageLocators:
     LOGIN_FORM = (By.ID, "login_form")
     FORM_REGISTER = (By.ID, "register_form")
@@ -12,6 +13,7 @@ class LoginPageLocators:
     PASSWORD_INPUT = (By.ID, "id_registration-password1")
     PASSWORD_AGAIN_INPUT = (By.ID, "id_registration-password2")
     BUTTON_REGISTRATION = (By.CSS_SELECTOR, "#register_form > button")
+
 
 class ProductPageLocator:
     BUTTON_BASKET = (By.ID, "add_to_basket_form")
@@ -24,6 +26,7 @@ class ProductPageLocator:
     CART_PRICE = (By.CSS_SELECTOR, 'div.alert > div > p:nth-child(1) > strong')
     PRICE_PRODUCT = (By.CSS_SELECTOR, '.product_main > p.price_color')
 
+
 class BasePageLocators:
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
@@ -31,4 +34,3 @@ class BasePageLocators:
     PRODUCT_IN_BASKET = (By.CSS_SELECTOR, '.hidden-xs > div > h2')
     MESSAGE_NO_PRODUCT = (By.CSS_SELECTOR, '#content_inner>p')
     USER_ICON = (By.CSS_SELECTOR, ".icon-user")
-

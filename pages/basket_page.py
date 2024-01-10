@@ -1,6 +1,7 @@
 from .base_page import BasePage
 from .locators import BasePageLocators
 
+
 class BasketPage(BasePage):
 
     def no_product_in_basket(self):
