@@ -7,20 +7,20 @@ pytest -v --tb=line --language=en -m need_review
 Критерий 1
 Убедитесь, что в проекте присутствуют следующие файлы.
 
-requirements.txt
-conftest.py
-__init__.py
-test_main_page.py
-test_product_page.py
-pytest.ini
+requirements.txt /
+conftest.py /
+__init__.py /
+test_main_page.py /
+test_product_page.py /
+pytest.ini /
 
 В папке pages:
-base_page.py
-basket_page.py
-locators.py
-login_page.py
-product_page.py
-main_page.py
+base_page.py /
+basket_page.py /
+locators.py /
+login_page.py /
+product_page.py /
+main_page.py /
 
 Критерий 2
 Откройте файл test_product_page.py.
